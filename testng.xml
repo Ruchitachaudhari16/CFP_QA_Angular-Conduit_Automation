@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Listeners.TestNGListeners"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/www.abcom.in/IdeaProjects/AngularConduit">
+        <classes>
+            <class name="com.testcase.ArticleTest">
+                <methods>
+                    <include name="publishPostTest"/>
+                </methods>
+            </class>
+            <class name="com.testcase.CotestSignin">
+                <methods>
+                    <include name="signInTest"/>
+                </methods>
+            </class>
+            <class name="com.testcase.CotestSignup">
+                <methods>
+                    <include name="SignupTest"/>
+                </methods>
+            </class>
+            <class name="com.testcase.ProfilepageTest">
+                <methods>
+                    <include name="postInProfileTest"/>
+                </methods>
+            </class>
+            <class name="com.testcase.SettingsPageTest">
+                <methods>
+                    <include name="profileUpdateTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
